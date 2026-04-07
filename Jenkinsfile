@@ -3,7 +3,7 @@ pipeline{
    stages{
     stage('#1.Checkout'){
      steps{
-        git url:https:'//github.com/revaticyber/docker',branch:'main'
+        git url:'https://github.com/JanhaviThiru/jenrepo.git',branch:'main'
 }
 }
 
@@ -23,6 +23,8 @@ pipeline{
      steps{
       bat 'docker run -d -p 4000:00 --name mycont mywebsite'
 }
+}
+   }
 }
 
  
